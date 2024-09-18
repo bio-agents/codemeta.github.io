@@ -1,0 +1,19 @@
+---
+title: "Crosswalk for bio.agents"
+image: "/img/IECHOR_logo_white_background_small.png"
+date: "2019-11-15"
+
+---
+
+The [bio.agents](https://bio.agents) registry is the [IECHOR](https://iechor-europe.org) registry for essential scientific and technical information about software agents, databases and services for bioinformatics and the life sciences.
+
+```{r echo = FALSE, message=FALSE, warning=FALSE, output="asis"}
+library("tidyverse")
+crosswalk <- "https://github.com/codemeta/codemeta/raw/master/crosswalk.csv"
+cw <- read_csv(crosswalk)
+cw %>% 
+  select(Property, `bio.agents`) %>%
+  filter(!is.na(`bio.agents`)) -> df
+
+knitr::kable(df, "html", table.attr="class=\"table table-striped\"")
+```

@@ -1,0 +1,8 @@
+ const uiSchema= {
+    "@type": {
+      "ui:widget": "hidden"
+    },
+    "@context": {
+      "ui:widget": "hidden"
+    }
+  };
