@@ -1,8 +1,3 @@
- const uiSchema= {
-    "@type": {
-      "ui:widget": "hidden"
-    },
-    "@context": {
-      "ui:widget": "hidden"
-    }
-  };
+version https://git-lfs.github.com/spec/v1
+oid sha256:2f924926ca224e4cdcf043cec4486f23f14f5376080e490c8d75b35adeda2e17
+size 125

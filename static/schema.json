@@ -1,35 +1,3 @@
-const schema =  {
-	"id": "SoftwareSourceCode.json",
-	"title": "SoftwareSourceCode",
-	"format": "http://schema.org/SoftwareSourceCode",
-	"media": {"type": "application/json;profile=http://schema.org/SoftwareSourceCode"},
-	"type": "object",
-	"properties": {
-    "@context": {"type": "string", "format": "uri", "default": "http://schema.org"},
-    "@type": {"type": "string", "default": "SoftwareSourceCode"},
-    "name": {"type": "string", "description": "Name of the software"},
-    "codeRepository": {
-	    "type": "string",
-			"format": "uri"
-		},
-		"programmingLanguage": {"type": "string"},
-		"license": {"type": "string"},
-	  "description": {"type": "string" },
-		"creator": {
-			"title": "Creator",
-			"type": "array",
-			"items": {   	
-			  "format": "http://schema.org/Person",
-      	"type": "object",
-      	"properties": {
-      	  "@type": {"type": "string", "default": "Person"},
-      	  "givenName": {"type": "string"},
-      		"familyName": {	"type": "string" },
-      		"email": {"type": "string"},
-          "id": {"description": "Author's ORCID ID, see <https://orcid.org>.", "type": "string", "format": "uri"}
-      	}
-      }
-		}
-
-	}
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:d8b576cd55290f1995f5e597a9b189b1e2b189bfa1f281502f9b1f8ba3181d9b
+size 1157
